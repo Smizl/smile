@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import { HashRouter, Link, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import LogoKerico from "./assets/logo.png";
@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <header className="header">
         <img src={LogoKerico} alt="Kerico" className="logo" />
         <nav className="nav">
@@ -85,7 +85,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
